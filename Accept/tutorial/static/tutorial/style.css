@@ -1,0 +1,10 @@
+.container {
+    margin: 5%;
+}
+
+#course {
+    background-color: #4287f5;
+    width: 800px;
+    margin: 5% 20%;
+    color: #fff;
+}

@@ -1,0 +1,20 @@
+<div class="header">
+    <nav class="nav nav-pills nav-justified">
+        <a class="nav-link active" aria-current="page" href="{% url 'home:home' %}">American English</a>
+        <a class="nav-link" href="{% url 'tutorial:read_english' %}">Reading</a>
+        <a class="nav-link" href="{% url 'tutorial:grammar_english' %}">Grammar</a>
+        <a class="nav-link" href="{% url 'tutorial:write_english' %}">Writing</a>
+    </nav>
+    <br>
+    <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'tutorial:course_english' %}">COURSES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'tutorial:fun_english' %}">Fun</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'tutorial:pronunciation_english' %}">Pronunciation</a>
+        </li>
+    </ul>
+</div>

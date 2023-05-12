@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Home page {% endblock %}
+
+
+{% block content %}
+     <h3 class="text-center">in God we trust</h3>
+
+    <br><br>
+
+    <div style="margin: 5%;" class="text-center">
+        <form action="">
+            {{ form }}
+            <input type="submit" value="search">
+        </form>    
+
+        <br><br><br>
+
+        {% for intro in intros %}
+            <h5>{{ intro.name }}</h5>
+            <p>{{ intro.description }}</p>
+        {% endfor %}
+
+    </div>
+{% endblock %}

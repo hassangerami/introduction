@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Grammar English {% endblock %}
+
+{% block static_link %}
+    <link rel="stylesheet" href="{% static 'tutorial/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        {% for grammar in grammars %}
+
+            <h3>{{ grammar.title }}</h3><br>
+            <p>{{ grammar.description|safe }}</p>
+
+        {% endfor %}
+
+    </div>
+{% endblock %}

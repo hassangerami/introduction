@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Writing English {% endblock %}
+
+{% block static_link %}
+    <link rel="stylesheet" href="{% static 'tutorial/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        {% for write in writes %}
+
+            <h3>{{ write.title }}</h3><br>
+            <p>{{ write.guide|safe }}</p>
+
+        {% endfor %}
+
+    </div>
+{% endblock %}
