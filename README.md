@@ -1,3 +1,3 @@
 # introduction
 
-This is open source project
+This is a open source project
